@@ -1,0 +1,102 @@
+* {
+  /* 
+  - box-sizing property-г border-box утгатайгаар бичиж өг
+  - margin болон padding-ийг reset хий
+ */
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  /*
+  Дэвсгэр өнгийг #344a72-оор тавь
+  */
+  font-family: 'Roboto', sans-serif;
+  background-color: #344a72;
+  line-height: 1.8;
+}
+
+a {
+  /* 
+  доогуур зураас (underline) муухай харагддаг учир түүнийг зайлуулаарай
+ */
+ text-decoration: none;
+}
+
+#container {
+  /* 
+  - margin-auto нь хоёр талаасаа ижил зай авч block элементийг голлуулдгийг битгий мартаарай
+  илүү 
+  - илүү responsive болгохын тулд max-width тавьж өгөөрэй
+  - бага зэрэг padding хийгээрэй
+  */
+  margin: 50px auto;
+  max-width: 400px;
+  display: block;
+  padding: 20px;
+}
+
+.form-wrap {
+  background-color: white;
+  padding: 15px 25px;
+}
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+}
+
+.form-wrap .form-group {
+    margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+}
+
+.form-wrap .form-group input {
+  border: #ddd 1px solid;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-wrap button {
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    background-color: #49c1a2;
+    border: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-wrap button:hover {
+  background-color: #37a08e;
+}
+
+.form-wrap .bottom-text {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.form-wrap .bottom-text a {
+    color: blue;
+}
+
+footer {
+  /* 
+  голлуулаарай
+ */
+ text-align: center;
+ margin-top: 10px;
+}
+
+footer a {
+  color: #49c1a2;
+}
+footer p{
+    color: white;
+}
